@@ -1,0 +1,24 @@
+# hades.models.Design file
+#  
+[name] NS
+[components]
+hades.models.rtlib.io.IpinVector S0 4800 4800 @N 1001 4 0001_B 1.0E-9 2
+hades.models.rtlib.io.IpinVector OP 4800 10200 @N 1001 6 000000_B 1.0E-9 2
+hades.models.io.Opin NS22 15000 9600 @N 1001 5.0E-9
+hades.models.io.Opin NS11 15000 7200 @N 1001 5.0E-9
+hades.models.io.Opin NS33 15000 12000 @N 1001 5.0E-9
+hades.models.Design NS3 9600 11400 @N 1001 C:/Users/Joice/Desktop/faculdade/Controle/Ns3.hds
+hades.models.io.Opin NS00 15000 4800 @N 1001 5.0E-9
+hades.models.Design NS2 9600 9000 @N 1001 C:/Users/Joice/Desktop/faculdade/Controle/Ns2.hds
+hades.models.Design NS1 9600 6600 @N 1001 C:/Users/Joice/Desktop/faculdade/Controle/Ns1.hds
+hades.models.Design NS0 9600 4200 @N 1001 C:/Users/Joice/Desktop/faculdade/Controle/Ns0.hds
+[end components]
+[signals]
+hades.signals.SignalStdLogicVector n5 6 5 OP Y NS0 Op0-Op5 NS1 Op0-Op5 NS2 Op0-Op5 NS3 Op0-Op5 11 2 4800 10200 5400 10200 2 5400 10200 5400 5400 2 5400 5400 9600 5400 2 4800 10200 6000 10200 2 6000 10200 6000 7800 2 6000 7800 9600 7800 2 4800 10200 6000 10200 2 6000 10200 9600 10200 2 4800 10200 9000 10200 2 9000 10200 9000 12600 2 9000 12600 9600 12600 2 6000 10200 4800 10200 
+hades.signals.SignalStdLogicVector n4 4 5 S0 Y NS0 S0-S3 NS1 S0-S3 NS2 S0-S3 NS3 S0-S3 10 2 4800 4800 9600 4800 2 4800 4800 8400 4800 2 8400 4800 8400 7200 2 8400 7200 9600 7200 2 4800 4800 8400 4800 2 8400 4800 8400 9600 2 8400 9600 9600 9600 2 4800 4800 8400 4800 2 8400 4800 8400 12000 2 8400 12000 9600 12000 2 8400 4800 4800 4800 
+hades.signals.SignalStdLogic1164 n3 2 NS0 NS0 NS00 A 1 2 14400 4800 15000 4800 0 
+hades.signals.SignalStdLogic1164 n2 2 NS1 NS1 NS11 A 1 2 14400 7200 15000 7200 0 
+hades.signals.SignalStdLogic1164 n1 2 NS2 NS2 NS22 A 1 2 14400 9600 15000 9600 0 
+hades.signals.SignalStdLogic1164 n0 2 NS3 NS3 NS33 A 1 2 14400 12000 15000 12000 0 
+[end signals]
+[end]

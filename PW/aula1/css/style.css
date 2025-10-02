@@ -1,0 +1,127 @@
+body {
+	font-family: Georgia, serif;
+
+}
+
+.menu {
+
+	background: #F6DEE5
+}
+
+a {
+	text-decoration: none;
+}
+
+a:link {
+	color: #860541
+}
+
+a:visited {
+	color: #b32265
+}
+
+#imagem {
+	position: relative;
+	align-self: center;
+	max-width: 300px;
+	max-height: 300px;
+	width: auto;
+	height: auto;
+}
+
+#rodape {
+	position: relative;
+	width: 80px;
+	margin: auto auto;
+
+}
+
+main {
+	background: linear-gradient(#F6DEE5, #ffffff, #ffffff, #F6DEE5);
+
+}
+
+footer {
+	text-align: center;
+	padding: 40px 0;
+	background: #F6DEE5
+}
+
+.copyright {
+	color: #050303;
+	font-size: 13px;
+	margin: 20px 0 0;
+}
+
+.dados h2 {
+	font-size: 30px;
+	font-weight: bold;
+	color: #860541;
+}
+
+.carousel-item img {
+	max-height: 300px;
+	/* Defina a altura desejada para as imagens */
+	object-fit: cover;
+	/* Garante que a imagem ocupe todo o espaço e seja cortada se necessário */
+}
+
+.project-image {
+	max-height: 400px;
+	width: auto;
+	margin: 0 auto;
+}
+
+.project-description {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.floating-button {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 1000;
+}
+
+.indented-paragraph {
+	text-indent: 50px;
+	/* Defina o valor desejado para o recuo */
+}
+
+#imagens {
+	position: relative;
+	align-self: center;
+}
+
+.video {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.card {
+	height: 100%;
+}
+.card-img-top {
+	height: 80%; /* Ajuste conforme necessário */
+	object-fit: cover;
+}
+.small-card {
+	max-width: 500px; /* Ajuste conforme necessário */
+	margin: 0 auto; /* Centralizar o card */
+}
+
+@media screen and (max-width: 480px) {
+	#imagem {
+		width: auto;
+	}
+
+	h1 {
+		text-align: center;
+	}
+
+	nav {
+		position: static;
+	}
+}

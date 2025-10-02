@@ -1,0 +1,22 @@
+# hades.models.Design file
+#  
+[name] LogRam
+[components]
+hades.models.gates.Nor2 i3 11400 5400 @N 1001 1.0E-8
+hades.models.io.Opin MenNCS 18600 6600 @N 1001 5.0E-9
+hades.models.io.PulseSwitch clock 4800 1800 @N 1001 0.1 
+hades.models.gates.InvSmall i1 7200 1800 @N 1001 5.0E-9
+hades.models.gates.Nand2 i0 10200 1800 @N 1001 1.0E-8
+hades.models.io.Ipin MenWrite 4800 4800 @N 1001 null U
+hades.models.io.Opin MenWriteS 18600 3000 @N 1001 5.0E-9
+hades.models.io.Ipin MenRead 4800 7200 @N 1001 null U
+[end components]
+[signals]
+hades.signals.SignalStdLogic1164 n6 2 MenRead Y i3 B 2 2 11400 7200 7200 7200 2 4800 7200 7200 7200 0 
+hades.signals.SignalStdLogic1164 n5 2 i3 Y MenNCS A 1 2 15000 6600 18600 6600 0 
+hades.signals.SignalStdLogic1164 n3 2 i0 Y MenWriteS A 1 2 13800 3000 18600 3000 0 
+hades.signals.SignalStdLogic1164 n2 3 MenWrite Y i0 B i3 A 6 2 4800 4800 8400 4800 2 8400 4800 8400 3600 2 8400 3600 10200 3600 2 4800 4800 10800 4800 2 10800 4800 10800 6000 2 10800 6000 11400 6000 1 4800 4800 
+hades.signals.SignalStdLogic1164 n1 2 i1 Y i0 A 1 2 9000 2400 10200 2400 0 
+hades.signals.SignalStdLogic1164 n0 2 clock Y i1 A 3 2 4800 1800 6600 1800 2 6600 1800 6600 2400 2 6600 2400 7200 2400 0 
+[end signals]
+[end]

@@ -1,0 +1,31 @@
+# hades.models.Design file
+#  
+[name] 0e9
+[components]
+hades.models.io.Ipin D -3600 0 @N 1001  U
+hades.models.gatter.And4 AND 10800 -7800 @N 1001 1.0E-8
+hades.models.io.Ipin C -3600 -2400 @N 1001  U
+hades.models.gates.InvSmall B-negado 1800 -3600 @N 1001 5.0E-9
+hades.models.io.Ipin B -3600 -4800 @N 1001  U
+hades.models.io.Ipin A -3600 -7200 @N 1001  U
+hades.models.gatter.And4 AND1 10800 -4800 @N 1001 1.0E-8
+hades.models.gates.InvSmall A-negado 1800 -6000 @N 1001 5.0E-9
+hades.models.gates.Or2 i1 15600 -6000 @N 1001 1.0E-8
+hades.models.io.Opin 0e9 21600 -4800 @N 1001 5.0E-9
+hades.models.gates.InvSmall D-negado 1800 1200 @N 1001 5.0E-9
+hades.models.gates.InvSmall C-negado 1800 -1200 @N 1001 5.0E-9
+[end components]
+[signals]
+hades.signals.SignalStdLogic1164 n9 3 C-negado Y AND C AND1 C 6 2 3600 -600 6000 -600 2 6000 -600 6000 -6000 2 6000 -6000 10800 -6000 2 3600 -600 6000 -600 2 6000 -600 6000 -3000 2 6000 -3000 10800 -3000 2 3600 -600 6000 -600 
+hades.signals.SignalStdLogic1164 n8 2 A-negado Y AND A 3 2 3600 -5400 4800 -5400 2 4800 -5400 4800 -7200 2 4800 -7200 10800 -7200 0 
+hades.signals.SignalStdLogic1164 n7 3 B-negado Y AND B AND1 B 6 2 3600 -3000 5400 -3000 2 5400 -3000 5400 -6600 2 5400 -6600 10800 -6600 2 3600 -3000 5400 -3000 2 5400 -3000 5400 -3600 2 5400 -3600 10800 -3600 2 5400 -3000 3600 -3000 
+hades.signals.SignalStdLogic1164 n6 3 D Y D-negado A AND1 D 6 2 -3600 0 1200 0 2 1200 0 1200 1800 2 1200 1800 1800 1800 2 -3600 0 10200 0 2 10200 0 10200 -2400 2 10200 -2400 10800 -2400 1 -3600 0 
+hades.signals.SignalStdLogic1164 n5 2 C Y C-negado A 3 2 -3600 -2400 1200 -2400 2 1200 -2400 1200 -600 2 1200 -600 1800 -600 0 
+hades.signals.SignalStdLogic1164 n4 2 B Y B-negado A 3 2 -3600 -4800 1200 -4800 2 1200 -4800 1200 -3000 2 1200 -3000 1800 -3000 0 
+hades.signals.SignalStdLogic1164 n3 2 AND1 Y i1 B 3 2 14400 -3600 15000 -3600 2 15000 -3600 15000 -4200 2 15000 -4200 15600 -4200 0 
+hades.signals.SignalStdLogic1164 n2 2 i1 Y 0e9 A 1 2 19200 -4800 21600 -4800 0 
+hades.signals.SignalStdLogic1164 n1 2 AND Y i1 A 3 2 14400 -6600 15000 -6600 2 15000 -6600 15000 -5400 2 15000 -5400 15600 -5400 0 
+hades.signals.SignalStdLogic1164 n0 3 A Y A-negado A AND1 A 6 2 -3600 -7200 1200 -7200 2 1200 -7200 1200 -5400 2 1200 -5400 1800 -5400 2 -3600 -7200 600 -7200 2 600 -7200 600 -4200 2 600 -4200 10800 -4200 1 -3600 -7200 
+hades.signals.SignalStdLogic1164 n11 2 D-negado Y AND D 3 2 3600 1800 6600 1800 2 6600 1800 6600 -5400 2 6600 -5400 10800 -5400 0 
+[end signals]
+[end]

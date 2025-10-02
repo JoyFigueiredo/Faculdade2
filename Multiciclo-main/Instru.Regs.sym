@@ -1,0 +1,28 @@
+hades.symbols.BboxRectangle  0 0 4800 5400
+hades.symbols.Rectangle  0 0 4800 5400
+hades.symbols.PortLabel 4650 4950 3 \u005b31-28\u005d
+hades.symbols.PortSymbol 4800 4800 [31-28]
+hades.symbols.PortLabel 4650 4350 3 \u005b15-0\u005ds
+hades.symbols.PortSymbol 4800 4200 [15-0]s
+hades.symbols.PortLabel 4650 3750 3 \u005b25-0\u005ds
+hades.symbols.PortSymbol 4800 3600 [25-0]s
+hades.symbols.PortLabel 4650 3150 3 \u005b15-11\u005ds
+hades.symbols.PortSymbol 4800 3000 [15-11]s
+hades.symbols.PortLabel 4650 2550 3 \u005b25-21\u005ds
+hades.symbols.PortSymbol 4800 2400 [25-21]s
+hades.symbols.PortLabel 4650 1950 3 \u005b5-0\u005ds
+hades.symbols.PortSymbol 4800 1800 [5-0]s
+hades.symbols.PortLabel 4650 1350 3 \u005b20-16\u005ds
+hades.symbols.PortSymbol 4800 1200 [20-16]s
+hades.symbols.PortLabel 4650 750 3 \u005b31-26\u005ds
+hades.symbols.PortSymbol 4800 600 [31-26]s
+hades.symbols.PortLabel 150 2550 Clear
+hades.symbols.PortSymbol 0 2400 Clear
+hades.symbols.PortLabel 150 1950 IRWrite
+hades.symbols.PortSymbol 0 1800 IRWrite
+hades.symbols.PortLabel 150 1350 clock
+hades.symbols.PortSymbol 0 1200 clock
+hades.symbols.PortLabel 150 750 Entrada
+hades.symbols.PortSymbol 0 600 Entrada
+hades.symbols.InstanceLabel 150 5250 Instruc.Regs
+hades.symbols.ClassLabel 150 450 Instruc.Regs

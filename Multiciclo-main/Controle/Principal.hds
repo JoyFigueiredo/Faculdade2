@@ -1,0 +1,55 @@
+# hades.models.Design file
+#  
+[name] Princ.Control
+[components]
+hades.models.io.Opin MenWrite 33600 1800 @N 1001 5.0E-9
+hades.models.io.Opin RegWrite 33600 4200 @N 1001 5.0E-9
+hades.models.rtlib.io.ExpanderVertical BitABit 15600 3600 @N 1001 4 1.0E-8
+hades.models.rtlib.io.IpinVector OP 3000 1800 @N 1001 6 100001_B 1.0E-9 2
+hades.models.io.Opin IRWrite 33600 5400 @N 1001 5.0E-9
+hades.models.io.Opin MentoRG 33600 6600 @N 1001 5.0E-9
+hades.models.io.Opin MemRead 33600 7800 @N 1001 5.0E-9
+hades.models.io.Ipin clear 6000 16800 @N 1001 null U
+hades.models.io.Opin IorD 33600 11400 @N 1001 5.0E-9
+hades.models.rtlib.register.RegR i2 9000 14400 @N 1001 4 XXXX_B 1.0E-8
+hades.models.rtlib.io.MergeBits i1 10200 12000 @N 1001 4 1.0E-8
+hades.models.io.Opin PCWriteCond 33600 10200 @N 1001 5.0E-9
+hades.models.Design NS 6000 5400 @N 1001 C:/Users/Joice/Desktop/Multiciclo/Controle/NS.hds
+hades.models.io.Opin RegDst 33600 3000 @N 1001 5.0E-9
+hades.models.Design Controle 21000 3600 @N 1001 C:/Users/Joice/Desktop/Multiciclo/Controle/Controle.hds
+hades.models.rtlib.io.OpinVector PCSouce 33600 13800 @N 1001 2 1.0E-9 2
+hades.models.rtlib.io.OpinVector ALUOp 33600 15000 @N 1001 2 1.0E-9 2
+hades.models.io.Opin PCWrite 33600 9000 @N 1001 5.0E-9
+hades.models.rtlib.io.OpinVector ALUScrB 33600 600 @N 1001 2 1.0E-9 1
+hades.models.io.Opin ALUScrA 33600 12600 @N 1001 5.0E-9
+hades.models.io.PulseSwitch clock 6000 15600 @N 1001 0.1 
+[end components]
+[signals]
+hades.signals.SignalStdLogic1164 n9 2 NS NS11 i1 A1 4 2 12000 12000 12000 10200 2 12000 10200 12600 10200 2 12600 10200 12600 6600 2 12600 6600 10800 6600 0 
+hades.signals.SignalStdLogic1164 n8 2 NS NS22 i1 A2 4 2 11400 12000 11400 9600 2 11400 9600 12000 9600 2 12000 9600 12000 7200 2 12000 7200 10800 7200 0 
+hades.signals.SignalStdLogic1164 n7 2 NS NS33 i1 A3 4 2 10800 12000 10800 9000 2 10800 9000 11400 9000 2 11400 9000 11400 7800 2 11400 7800 10800 7800 0 
+hades.signals.SignalStdLogicVector n6 4 2 i1 Y i2 D 1 2 10800 13200 10800 14400 0 
+hades.signals.SignalStdLogic1164 n5 2 BitABit Y0 Controle D 1 2 16800 6000 21000 6000 0 
+hades.signals.SignalStdLogic1164 n19 2 Controle MentoRg MentoRG A 3 2 25800 7200 29400 7200 2 29400 7200 29400 6600 2 29400 6600 33600 6600 0 
+hades.signals.SignalStdLogic1164 n4 2 BitABit Y1 Controle C 1 2 16800 5400 21000 5400 0 
+hades.signals.SignalStdLogic1164 n18 2 Controle MemRead MemRead A 1 2 25800 7800 33600 7800 0 
+hades.signals.SignalStdLogic1164 n3 2 BitABit Y2 Controle B 1 2 16800 4800 21000 4800 0 
+hades.signals.SignalStdLogic1164 n17 2 Controle PCWrite1 PCWrite A 3 2 25800 8400 29400 8400 2 29400 8400 29400 9000 2 29400 9000 33600 9000 0 
+hades.signals.SignalStdLogic1164 n2 2 BitABit Y3 Controle A 1 2 16800 4200 21000 4200 0 
+hades.signals.SignalStdLogic1164 n16 2 Controle PCWriteCond PCWriteCond A 3 2 25800 9000 28800 9000 2 28800 9000 28800 10200 2 28800 10200 33600 10200 0 
+hades.signals.SignalStdLogic1164 n1 2 clear Y i2 NR 3 2 6000 16800 8400 16800 2 8400 16800 8400 16200 2 8400 16200 9000 16200 0 
+hades.signals.SignalStdLogic1164 n15 2 Controle IorD IorD A 3 2 25800 9600 28200 9600 2 28200 9600 28200 11400 2 28200 11400 33600 11400 0 
+hades.signals.SignalStdLogicVector n0 6 2 OP Y NS OP 3 2 3000 1800 4200 1800 2 4200 1800 4200 6600 2 4200 6600 6000 6600 0 
+hades.signals.SignalStdLogic1164 n14 2 Controle ALUScrA ALUScrA A 3 2 25800 10200 27600 10200 2 27600 10200 27600 12600 2 27600 12600 33600 12600 0 
+hades.signals.SignalStdLogicVector n13 2 2 Controle PCSouce0e1 PCSouce A 4 2 25800 10800 26400 10800 2 26400 10800 27000 10800 2 27000 10800 27000 13800 2 27000 13800 33600 13800 0 
+hades.signals.SignalStdLogicVector n12 2 2 Controle ALUOp0e1 ALUOp A 3 2 25800 11400 26400 11400 2 26400 11400 26400 15000 2 26400 15000 33600 15000 0 
+hades.signals.SignalStdLogic1164 n11 2 clock Y i2 CLK 1 2 6000 15600 9000 15600 0 
+hades.signals.SignalStdLogic1164 n10 2 NS NS00 i1 A0 4 2 12600 12000 12600 10800 2 12600 10800 13200 10800 2 13200 10800 13200 6000 2 13200 6000 10800 6000 0 
+hades.signals.SignalStdLogicVector n25 4 3 i2 Q NS S0 BitABit A 8 2 10800 16800 10800 17400 2 6000 6000 3000 6000 2 3000 6000 3000 17400 2 3000 17400 10800 17400 2 10800 17400 14400 17400 2 14400 17400 14400 3000 2 14400 3000 16200 3000 2 16200 3000 16200 3600 1 10800 17400 
+hades.signals.SignalStdLogic1164 n24 2 Controle RegWrite RegWrite A 3 2 25800 6000 28200 6000 2 28200 6000 28200 4200 2 28200 4200 33600 4200 0 
+hades.signals.SignalStdLogic1164 n23 2 Controle RegDst RegDst A 3 2 25800 5400 27600 5400 2 27600 5400 27600 3000 2 27600 3000 33600 3000 0 
+hades.signals.SignalStdLogic1164 n22 2 Controle MenWrite MenWrite A 3 2 25800 4800 27000 4800 2 27000 4800 27000 1800 2 27000 1800 33600 1800 0 
+hades.signals.SignalStdLogicVector n21 2 2 Controle ALUScrB0e1 ALUScrB A 3 2 25800 4200 26400 4200 2 26400 4200 26400 600 2 26400 600 33600 600 0 
+hades.signals.SignalStdLogic1164 n20 2 Controle IRWrite IRWrite A 3 2 25800 6600 28800 6600 2 28800 6600 28800 5400 2 28800 5400 33600 5400 0 
+[end signals]
+[end]

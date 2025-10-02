@@ -1,0 +1,200 @@
+body {
+	font-family: Georgia, serif;
+}
+
+header {
+	background: #F6DEE5;
+	padding: 20px 0;
+	block-size: 150px;
+	
+}
+
+a{
+	text-decoration: none;
+}
+
+a:link{
+	color: #860541
+}
+
+a:visited{
+	color: #b32265
+}
+
+#principal{
+	color: #551206;
+	margin-left: 15%;
+	margin-right: 15%;
+	text-align: center;
+	font-weight: bold;
+	position: relative;
+}
+
+.dados p{
+	margin-left: 5%;
+	margin-right: 5%;
+	text-align: center;
+	position: relative;
+}
+
+.dados{
+	color: #551206;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+.dados b{
+	font-weight: bold;
+	margin-right: 20px;
+}
+
+.dados h1{
+	color: #3a0c04;
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+.dados h3{
+	color: #a30d26;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+#imagem{
+	width: 100px;
+	text-align: center;
+}
+
+#principal img {
+	position: relative;
+	
+	align-self: center;
+	max-width: 50%;
+    max-height: 50%;
+    width: auto;
+    height: auto;
+}
+
+#rodape {
+	position: relative;
+	width: 80px;
+	margin: auto auto;
+	
+}
+
+nav {
+	position: absolute;
+	top: 110px;
+	right: 0;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+nav a {
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 15px;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #8d4289;
+	text-decoration: underline;
+}
+
+form {
+	margin: 40px 0;
+}
+
+form label,
+form legend {
+	display: block;
+	font-size: 20px;
+	margin: 0 0 10px;
+}
+
+main {
+	background: linear-gradient(#F6DEE5, #ffffff, #ffffff, #F6DEE5);
+	
+}
+
+footer {
+	text-align: center;
+	padding: 40px 0;
+	
+	background: #F6DEE5
+}
+
+.copyright {
+	color: #050303;
+	font-size: 13px;
+	margin: 20px 0 0;
+}
+
+.corpoSite {
+	background: #ffffff;
+}
+
+.dados h2 {
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	color: #860541;
+}
+
+.dados img{
+	width: 50%;
+	text-align: center;
+	position: relative;
+	max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+#principal h2 {
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	color: #860541;
+}
+
+#principal h4 {
+	font-size: 20px;
+	font-weight: bold;
+	text-align: left;
+	color: #860541;
+	margin-block-end: 15px;
+}
+
+.carrossel h1 {
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	color: #860541;
+}
+
+
+@media screen and (max-width: 480px) {
+	#imagem {
+		width: auto;
+	}
+
+	h1 {
+		text-align: center;
+	}
+
+	nav {
+		position: static;
+	}
+}

@@ -1,0 +1,12 @@
+# hades.models.Design file
+#  
+[name] unnamed
+[components]
+hades.models.Design NS3 9600 14400 @N 1001 C:/Users/Joice/Desktop/faculdade/Controle/Ns3.hds
+hades.models.Design NS2 9600 11400 @N 1001 C:/Users/Joice/Desktop/faculdade/Controle/Ns2.hds
+hades.models.Design NS1 9600 8400 @N 1001 C:/Users/Joice/Desktop/faculdade/Controle/Ns1.hds
+hades.models.Design NS0 10200 3000 @N 1001 C:/Users/Joice/Desktop/faculdade/Controle/Ns0.hds
+[end components]
+[signals]
+[end signals]
+[end]
